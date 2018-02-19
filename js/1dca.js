@@ -23,3 +23,12 @@ var firstRow = function() {
 
 var nextRow = function(previousRow) {
 }
+
+var OneDCA = function() {
+    let state = []
+    let rule = function (cellIndex) {;
+        let neighborhoodVector = [-1,0,1];
+        let neighborhood = neighborhoodVector.map(i => state[cellIndex + i]);
+        let sum = neighborhood[0] + neighborhood[1] + neighborhood[2];
+    }
+};
